@@ -1,9 +1,0 @@
----
-- hosts: lbservers
-  sudo: yes
-  tasks:
-    - name: Stop apache
-      service: name=httpd state=stopped
-    - name: Uninstall apache
-      yum: name=httpd  state=absent
-...
